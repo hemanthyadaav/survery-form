@@ -1,0 +1,77 @@
+body{
+    background-image: url(https://forms.office.com/Images/Theme/meeting.png);
+    color: #fff;
+    font-family: 'Poppins', sans-serif;
+    font-size: 18px;
+    font-weight: 900;
+}   
+
+#title-div{
+    text-align: center;
+}
+
+#title{
+    font-family: 'Reggae One', cursive;
+}
+form{
+    background-color: #5A20CB;
+    width: 600px;
+    margin: 10px auto;
+    padding: 50px;
+    border-radius: 10px;
+    font-size: 18px;
+     font-weight: 900;
+    align-items: center;
+    
+}
+
+input{
+    margin-top: 10px ;
+    padding: 10px 0px;
+    border-radius: 8px;
+}
+ select{
+    padding: 8px 108px;
+    border-radius: 8px;
+} 
+
+textarea{
+    max-width: 100%;
+    border-radius: 8px;
+}
+option{
+    font-family: 'Poppins', sans-serif;
+    font-weight: 900;
+    font-size: 16px;
+}
+.submit{
+    text-align: center;
+}
+button{
+    background-color: #4DD637;
+    color: #fff;
+    font-weight: 600;
+    padding: 10px 60px;
+    border: none;
+    border-radius: 5px;
+    letter-spacing: 1px;
+    line-height: 1.5;
+    font-size: 20px;
+    font-family: monospace;
+    width: 100%;
+}
+.form-number{
+    width: 100%;
+}
+
+input::-webkit-input-placeholder {
+    font-size: 16px;
+    line-height: 3;
+}
+
+textarea::-webkit-input-placeholder{
+    font-size: 16px;
+}
+textarea{
+    margin-top: 10px;
+}
