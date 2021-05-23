@@ -4,6 +4,7 @@
 .title-class{
     text-align: center;
     font-family: 'Poppins', sans-serif;
+   
 }
 
 #title{
@@ -52,4 +53,10 @@ body{
 }
 .submit{
     text-align: center;
+}
+
+@media only screen and (max-width: 600px) {
+    .container{
+        width: 80%;
+    }
 }
