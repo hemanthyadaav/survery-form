@@ -17,10 +17,11 @@
             <h1 id="title">UBDT Admission Form</h1>
             <p style = "font-style: italic;"id="description">Please fill out all the fields and submit the form</p>
         </div>
+
        
         <form id="survey-form" >
             <label id = "name-label" for="name">Name</label><br>
-            <input type="text" name="name" id="name" placeholder="As per SSLC Marks Card" size="90" required><br/><br/>
+            <input type="text" name="name" id="name" placeholder="As per SSLC Marks Card" size="100%" required><br/><br/>
 
             <label>Gender</label><br/>
             <label for="male">Male</label>
@@ -32,7 +33,7 @@
             <br/>
             <br>
             <label id="email-label" for="email">Email</label><br>
-            <input type="email" name="email" id="email" placeholder="Enter your email"  size="90" required><br/><br/>
+            <input type="email" name="email" id="email" placeholder="Enter your email"  size="100%" required><br/><br/>
             <label id="number-label" for="number">Phone</label><br>
             <input class="form-number" type="number" name="number" id="number" placeholder="Enter your mobile number" min="6000000000" max="9999999999"><br /><br />
             <label for="dropdown"></label>Branch<br/>
@@ -62,9 +63,15 @@
             <textarea name="feedback" id="feedback" cols="90" rows="10" placeholder="Enter your comments here..."></textarea><br><br>
 
             <div class="submit">
-                <button type="submit" id="submit">Submit</button>
+                <button onclick = "finish()" type="button" id="submit">Submit</button>
+                <h1 style="text-align: center;" id="thanks"></h1>
             </div>
             
+            <script>
+                function finish(){
+                    document.getElementById("thanks").innerHTML = "Thanks for Submitting the form";
+                }
+            </script>
 
         </form>
     </div>
