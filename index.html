@@ -7,73 +7,80 @@
     <script src="https://cdn.freecodecamp.org/testable-projects-fcc/v1/bundle.js"></script>
     <link rel="stylesheet" href="style.css">  
     <link rel="preconnect" href="https://fonts.gstatic.com">
-    <link href="https://fonts.googleapis.com/css2?family=Poppins:wght@200&display=swap" rel="stylesheet">
     <link href="https://fonts.googleapis.com/css2?family=Reggae+One&display=swap" rel="stylesheet">
+    <link href="https://fonts.googleapis.com/css2?family=Poppins&display=swap" rel="stylesheet">
+    
     <title>Survey Form</title>
 </head>
 <body>
-    <div id = "main">
-        <div style="text-align: center;" id="title-div">
+   
+        <div class="title-class">
             <h1 id="title">UBDT Admission Form</h1>
-            <p style = "font-style: italic;"id="description">Please fill out all the fields and submit the form</p>
+            <p>Please fill out all the fields and submit the form</p>
         </div>
 
-       
-        <form id="survey-form" >
-            <label id = "name-label" for="name">Name</label><br>
-            <input style="max-width: 100%; width: 85%;"type="text" name="name" id="name" placeholder="As per SSLC Marks Card" required><br/><br/>
+       <div class="container">
 
-            <label>Gender</label><br/>
-            <label for="male">Male</label>
-            <input  type="radio" id="gender" value = "male" name = "gender">
-            <label for="female">Female</label>
-            <input type="radio" id="gender" value="female" name="gender">
-            <label for="others">Others</label>
-            <input type="radio" id="gender" value="others" name="gender">
-            <br/>
-            <br>
-            <label id="email-label" for="email">Email</label><br>
-            <input style="max-width: 100%; width: 85%;"  type="email" name="email" id="email" placeholder="Enter your email"  size="50%" required><br/><br/>
-            <label id="number-label" for="number">Phone</label><br>
-            <input style="max-width: 100%; width: 85%;" class="form-number" type="number" name="number" id="number" placeholder="Enter your mobile number" min="6000000000" max="9999999999"><br /><br />
-            <label for="dropdown"></label>Branch<br/>
-            <select name="branch" id="dropdown">
-                <option disabled value selected>Select your Branch Name</option>
-                <option value="Computer Science & Engineering">Computer Science & Engineering</option>
-                <option value="Electronics and Communication Engineering">Electronics and Communication Engineering</option>
-                <option value="Electrical & Electronics Engineering">Electrical & Electronics Engineering</option>
-                <option value="Mechanical Engineering">Mechanical Engineering</option>
-                <option value="Civil Engineering">Civil Engineering</option>
-            </select></br></br>
-
-            <label>Select atleast two  programming languages to learn</label><br>
-           
-            <input type="checkbox" name="language" id="language" value="basic c">
-            <label for="language">Basic C</label><br>
-            <input type="checkbox" name="language" id="language" value="cpp">
-            <label for="language">CPP</label><br>
-            <input type="checkbox" name="language" id="language" value="java">
-            <label for="language">Java</label><br>
-            <input type="checkbox" name="language" id="language" value="Python">
-            <label for="language">Python</label><br>
-            <input type="checkbox" name="language" id="language" value="Javascript">
-            <label for="language">Javascript</label><br><br>
+            <form id="survey-form">
+                <label id="name-label" for="name">Name</label><br>
+                <input  type="text" name="name" id="name" placeholder="As per SSLC Marks Card"
+                    required><br /><br />
             
-            <label for="feedback">Any suggestion or feedback for us!</label><br>
-            <textarea name="feedback" id="feedback" cols="90" rows="10" placeholder="Enter your comments here..."></textarea><br><br>
+                <label>Gender</label><br />
+                <label for="male">Male</label>
+                <input type="radio" id="gender" value="male" name="gender">
+                <label for="female">Female</label>
+                <input type="radio" id="gender" value="female" name="gender">
+                <label for="others">Others</label>
+                <input type="radio" id="gender" value="others" name="gender">
+                <br />
+                <br>
 
-            <div class="submit">
-                <button onclick = "finish()" type="button" id="submit">Submit</button>
-                <h1 style="text-align: center;" id="thanks"></h1>
-            </div>
+                <label id="email-label" for="email">Email</label><br>
+                <input type="email" name="email" id="email" placeholder="Enter your email"
+                   required><br /><br />
+
+                <label for="dropdown"></label>Branch<br />
+                <select name="branch" id="dropdown">
+                    <option disabled value selected>Select your Branch Name</option>
+                    <option value="Computer Science & Engineering">Computer Science & Engineering</option>
+                    <option value="Electronics and Communication Engineering">Electronics and Communication Engineering</option>
+                    <option value="Electrical & Electronics Engineering">Electrical & Electronics Engineering</option>
+                    <option value="Mechanical Engineering">Mechanical Engineering</option>
+                    <option value="Civil Engineering">Civil Engineering</option>
+                </select></br></br>
             
-            <script>
-                function finish(){
-                    document.getElementById("thanks").innerHTML = "Thanks for Submitting the form";
-                }
-            </script>
-
-        </form>
-    </div>
+                <label>Select atleast two programming languages to learn</label><br>
+            
+                <input type="checkbox" name="language" id="language" value="basic c">
+                <label for="language">Basic C</label><br>
+                <input type="checkbox" name="language" id="language" value="cpp">
+                <label for="language">CPP</label><br>
+                <input type="checkbox" name="language" id="language" value="java">
+                <label for="language">Java</label><br>
+                <input type="checkbox" name="language" id="language" value="Python">
+                <label for="language">Python</label><br>
+                <input type="checkbox" name="language" id="language" value="Javascript">
+                <label for="language">Javascript</label><br><br>
+            
+                <label for="feedback">Any suggestion or feedback for us!</label><br>
+                <textarea name="feedback" id="feedback" style="height:200px"
+                    placeholder="Enter your comments here..."></textarea><br><br>
+            
+                <div class="submit">
+                    <button onclick="finish()" type="button" id="submit">Submit</button>
+                    <h3 style="text-align: center;"id="thanks"></h3>
+                </div>
+            
+                <script>
+                    function finish()
+                    {
+                        document.getElementById("thanks").innerHTML = "Thanks for Submitting the form";
+                    }
+                </script>
+            
+            </form>
+        </div>
+        
 </body>
 </html>

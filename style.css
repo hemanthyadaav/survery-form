@@ -1,77 +1,55 @@
-body{
-    background-image: url(https://forms.office.com/Images/Theme/meeting.png);
-    color: #fff;
-    font-family: 'Poppins', sans-serif;
-    font-size: 18px;
-    font-weight: 900;
-}   
-
-#title-div{
+*{
+    box-sizing: border-box;
+}
+.title-class{
     text-align: center;
+    font-family: 'Poppins', sans-serif;
 }
 
 #title{
     font-family: 'Reggae One', cursive;
 }
-form{
-    background-color: #5A20CB;
-    width: 600px;
-    margin: 10px auto;
-    padding: 50px;
-    border-radius: 10px;
-    font-size: 18px;
-    font-weight: 900;
-    align-items: center;
-    
+
+.container {
+  border-radius: 5px;
+  background-color: #5A20CB;
+  padding: 20px 20px 5px 20px;
+  color: #fff;
+  font-family: 'Poppins', sans-serif;
+  width: 50%;
+  margin: auto;
 }
 
-input{
-    margin-top: 10px ;
-    padding: 10px 0px;
-    border-radius: 8px;
+input[type=text],input[type=email], select, textarea {
+  width: 100%;
+  padding: 12px;
+  border: 1px solid #ccc;
+  border-radius: 4px;
+  resize: vertical;
+  margin-top: 8px;
 }
- select{
-    padding: 8px 108px;
-    border-radius: 8px;
-} 
 
-textarea{
-    max-width: 100%;
-    border-radius: 8px;
-}
 option{
     font-family: 'Poppins', sans-serif;
-    font-weight: 900;
-    font-size: 17px;
-}
-.submit{
-    text-align: center;
-}
-button{
-    background-color: #4DD637;
-    color: #fff;
-    font-weight: 600;
-    padding: 10px 60px;
-    border: none;
-    border-radius: 5px;
-    letter-spacing: 1px;
-    line-height: 1.5;
-    font-size: 20px;
-    font-family: monospace;
-    width: 100%;
-}
-.form-number{
-    width: 58%;
-}
-
-input::-webkit-input-placeholder {
-    font-size: 16px;
+    font-weight: 500;
     line-height: 3;
 }
 
-textarea::-webkit-input-placeholder{
-    font-size: 16px;
+button{
+    padding: 10px 50px;
+    border-radius: 4px;
+    border: none;
+    background-color: #4DD637;
+    color: #fff;
+    font-weight: 900;
+    font-family: 'Poppins', sans-serif;
+    letter-spacing: 1px;
+    cursor: pointer;
+    
 }
-textarea{
-    margin-top: 10px;
+body{
+    background-color: #ccc
+}
+.submit{
+    text-align: center;
 }
