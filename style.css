@@ -20,7 +20,7 @@ form{
     padding: 50px;
     border-radius: 10px;
     font-size: 18px;
-     font-weight: 900;
+    font-weight: 900;
     align-items: center;
     
 }
@@ -42,7 +42,7 @@ textarea{
 option{
     font-family: 'Poppins', sans-serif;
     font-weight: 900;
-    font-size: 16px;
+    font-size: 17px;
 }
 .submit{
     text-align: center;
@@ -61,7 +61,7 @@ button{
     width: 100%;
 }
 .form-number{
-    width: 50%;
+    width: 58%;
 }
 
 input::-webkit-input-placeholder {
